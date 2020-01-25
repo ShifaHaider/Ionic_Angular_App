@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor() {}
+  list: any = [1, 2, 3];
+  a: String = 'Hello';
+  value:String=""
+  constructor() { };
+  getValue() {
+    console.log(this.a);
+  }
 
 }

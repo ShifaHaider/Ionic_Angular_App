@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+list:any=[];
+text:String="";
 
   constructor() {}
-
+  getValue() {
+    this.list.push(this.text)
+    this.text="";
+  }
 }

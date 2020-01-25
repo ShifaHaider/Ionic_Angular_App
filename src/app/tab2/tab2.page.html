@@ -6,4 +6,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <h1 *ngIf="a">Hello {{a}}</h1>
+  <h1> {{a}}</h1>
+  <ion-input [(ngModel)]="a"></ion-input>
+  <ion-input [placeholder]="a"></ion-input>
+<h2 *ngFor="let v of list;let i = index">{{v}} {{i}}</h2>
+<button (click)="getValue()">Hello</button>
+<h1></h1>
+<ion-list>
+  <ion-item *ngFor="let v of list;let i = index">
+    <ion-label>{{v}}</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
